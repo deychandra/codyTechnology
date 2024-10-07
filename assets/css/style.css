@@ -212,7 +212,7 @@ header li a:hover {
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
-  animation: growShrinkMove 8s ease-in-out forwards;
+  animation: growShrinkMove 6s ease-in-out forwards;
  
 }
 
@@ -408,7 +408,8 @@ header li a:hover {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  height: 261px;
+  /* height: 261px; */
+  height: auto;
   width: 100%;
   margin-top: 32px;
   padding: 30px;
@@ -426,5 +427,135 @@ font-weight: 300;
 color: var(--black);
 width: 100px;
 }
+.why-choose-us .overall-client ul{
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  position: relative;
+  height: 280px;
+}
+.why-choose-us .overall-client ul li {
+  border: 1px solid #ECECEC;
+  border-radius: 50%;
+  position: absolute;
+}
+.why-choose-us .overall-client li:first-child {
+  height: 100%;
+  width: 100%;
+}
+.why-choose-us .overall-client .animation-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 70px;
+  top: 0;
+  left: 0;
+}
+.why-choose-us .overall-client li:nth-child(2) {
+  height: 70%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.why-choose-us .overall-client li:nth-child(3) {
+  height: 50%;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.why-choose-us .overall-client li:nth-child(4) {
+  height: 30%;
+  width: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.why-choose-us .overall-client li:nth-child(1) .ani-dt-one {
+  top: 25%;
+  left: 93%;
+}
+
+.why-choose-us .overall-client li:nth-child(1) .ani-dt-two {
+  top: 89%;
+  left: 79%;
+}
+
+.why-choose-us .overall-client li:nth-child(1) .ani-dt-three {
+  top: 87%;
+  left: 16%;
+}
+
+.why-choose-us .overall-client li:nth-child(1) .ani-dt-four {
+  top: 12%;
+  left: 15%;
+}
+
+
+.why-choose-us .overall-client li:nth-child(1) .ani-image-one{
+  right: -27px;
+  top: 115px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+  transition: all .3s;
+}
+
+.ani-dot {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #AEAEAE;
+}
+.why-choose-us .overall-client li:nth-child(1) .ani-image-one {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+
+}
+.why-choose-us .overall-client li:nth-child(1) .ani-image-one{
+  right: -8%;
+  top: 140px;
+}
+
+.why-choose-us .overall-client li:nth-child(1) .ani-image-two{
+  height: 30px;
+  width: 30px;
+  right: 44%;
+  top: 262px;
+}
+
+.why-choose-us .overall-client li:nth-child(1) .ani-image-three{
+  left: -7%;
+  top: 114px;
+  height: 50px;
+  width: 50px;
+}
+
+
+.why-choose-us .overall-client li:nth-child(1) .ani-image-four{
+  left: 44%;
+  top: -16px;
+  height: 30px;
+  width: 30px;
+}
+
+.ani-image{
+  position: absolute;
+  background-color: transparent;
+  border-radius: 100%;
+  z-index: 2;
+  transition: all .3s;
+  background-color: transparent;
+  border-radius: 100%;
+}
+ img{
+width: 100%;
+height: 100;
+}
 /*====Why-choose-us====*/
