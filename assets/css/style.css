@@ -201,9 +201,7 @@ header li a:hover {
   height: 100%;
   position: absolute;
   overflow: hidden;
-
 }
-
 
 .banner .cloud-rocket {
   width: 46%;
@@ -213,45 +211,58 @@ header li a:hover {
   z-index: 1;
   transform: translateX(-50%);
   animation: growShrinkMove 6s ease-in-out forwards;
- 
 }
 
-
-@keyframes growShrinkMove {
+/* @keyframes growShrinkMove {
   0% {
     width: 46%;
-    bottom: -50%; 
-    transform: translateX(-50%) scale(1); 
+    bottom: -50%;
+    transform: translateX(-50%) scale(1);
   }
   50% {
     width: 400%;
     bottom: 0;
-    transform: translateX(-50%) scale(1); 
+    transform: translateX(-50%) scale(1);
   }
   100% {
     width: 46%;
     bottom: 0;
     transform: translateX(-50%) scale(1);
   }
-}
-
+} */
 
 
 
 .banner .p-cloud-l {
   position: absolute;
   left: 0;
-  bottom: 36px;
+  bottom: -6px;
   width: 59%;
   z-index: 1;
+  animation: bounce 3s ease-in-out infinite;
 }
+
+@keyframes bounce{
+  0% {
+    transform: translateY(-10px);
+  }
+  
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 
 .banner .p-cloud-r {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -14px;
   width: 38%;
   z-index: 1;
+  animation: bounce 3s ease-in-out infinite;
 }
 .banner .round-clod {
   position: absolute;
@@ -268,6 +279,7 @@ header li a:hover {
   bottom: 70px;
   width: 38%;
   z-index: 0;
+  animation: bounce 4s ease-in-out infinite;
 }
 
 .banner .w-cloud-r {
@@ -276,15 +288,18 @@ header li a:hover {
   bottom: 70px;
   width: 38%;
   z-index: 0;
+  animation: bounce 5s ease-in-out infinite;
 }
 
 .banner .b-cloud {
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   left: 0;
   width: 100%;
   z-index: 2;
+  animation: bounce 5s ease-in-out infinite;
 }
+
 .banner .main-container {
   position: relative;
   padding-top: 200px;
@@ -390,60 +405,68 @@ header li a:hover {
   left: 0;
   z-index: -1;
 }
-.why-choose-us .ap-bx .content{
+.why-choose-us .ap-bx .content {
   max-width: 310px;
   width: 100%;
 }
-.why-choose-us .ap-bx  p {
+.why-choose-us .ap-bx p {
   margin-bottom: 25px;
 }
-.why-choose-us .ap-bx  h5 {
+.why-choose-us .ap-bx h5 {
   font-size: 25px;
   line-height: 40px;
   font-weight: 400;
   color: var(--black);
 }
-.why-choose-us .overall-client{
-  background-color: #F5F5F5;
+.why-choose-us .overall-client {
+  background-color: #f5f5f5;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  /* height: 261px; */
-  height: auto;
+  height: 261px;
   width: 100%;
   margin-top: 32px;
   padding: 30px;
 }
-.why-choose-us .counter strong{
-font-size: 45px;
-font-weight: 500;
-color: var(--black);
-display: block;
+.why-choose-us .counter strong {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--black);
+  display: block;
 }
-.why-choose-us .counter small{
-display: block;
-font-size: 20px;
-font-weight: 300;
-color: var(--black);
-width: 100px;
+.why-choose-us .counter{
+  position: relative;
 }
-.why-choose-us .overall-client ul{
+.why-choose-us .animate-position{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(39%, 43%);
+}
+.why-choose-us .counter small {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--black);
+  width: 100px;
+}
+.why-choose-us .overall-client ul {
   display: flex;
   justify-content: center;
-  width: 280px;
+  width: 400px;
   position: relative;
-  height: 280px;
+  height: 400px;
 }
-.why-choose-us .overall-client ul li {
-  border: 1px solid #ECECEC;
+.why-choose-us ul li {
+  border: 1px solid #ececec;
   border-radius: 50%;
   position: absolute;
 }
-.why-choose-us .overall-client li:first-child {
+.why-choose-us li:first-child {
   height: 100%;
   width: 100%;
 }
-.why-choose-us .overall-client .animation-wrapper {
+.why-choose-us .animation-wrapper {
   position: relative;
   height: 100%;
   width: 100%;
@@ -451,6 +474,79 @@ width: 100px;
   top: 0;
   left: 0;
 }
+.why-choose-us li:first-child .animation-wrapper{
+  animation: moveAround 15s linear infinite;
+}
+
+.why-choose-us li:nth-child(2) .animation-wrapper{
+  animation: moveAround 10s linear infinite;
+}
+
+.why-choose-us li:nth-child(3) .animation-wrapper{
+  animation: moveAround 25s linear infinite;
+}
+
+.why-choose-us li:nth-child(4) .animation-wrapper{
+  animation: moveAround 35s linear infinite;
+}
+
+
+
+@keyframes moveAround {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.why-choose-us li:nth-child(1) .ani-image{
+  animation: moveAround 15s linear infinite reverse;
+}
+
+.why-choose-us li:nth-child(2) .ani-image{
+  animation: moveAround 10s linear infinite reverse;
+}
+
+.why-choose-us li:nth-child(3) .ani-image{
+  animation: moveAround 25s linear infinite reverse;
+}
+
+.why-choose-us li:nth-child(4) .ani-image{
+  animation: moveAround 35s linear infinite reverse;
+}
+
+
+
+@keyframes moveAround {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 .why-choose-us .overall-client li:nth-child(2) {
   height: 70%;
   width: 70%;
@@ -479,83 +575,147 @@ width: 100px;
   left: 93%;
 }
 
-.why-choose-us .overall-client li:nth-child(1) .ani-dt-two {
-  top: 89%;
-  left: 79%;
+/*====Why-choose-us====*/
+
+/*=========Multi-use=========*/
+.why-choose-us .ani-image img {
+  width: 100%;
+  height: 100%;
 }
 
-.why-choose-us .overall-client li:nth-child(1) .ani-dt-three {
-  top: 87%;
-  left: 16%;
-}
-
-.why-choose-us .overall-client li:nth-child(1) .ani-dt-four {
-  top: 12%;
-  left: 15%;
-}
-
-
-.why-choose-us .overall-client li:nth-child(1) .ani-image-one{
-  right: -27px;
-  top: 115px;
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  z-index: 2;
-  transition: all .3s;
-}
-
-.ani-dot {
+.why-choose-us .ani-dot {
   position: absolute;
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: #AEAEAE;
+  background-color: #aeaeae;
 }
-.why-choose-us .overall-client li:nth-child(1) .ani-image-one {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-
-}
-.why-choose-us .overall-client li:nth-child(1) .ani-image-one{
-  right: -8%;
-  top: 140px;
-}
-
-.why-choose-us .overall-client li:nth-child(1) .ani-image-two{
-  height: 30px;
-  width: 30px;
-  right: 44%;
-  top: 262px;
-}
-
-.why-choose-us .overall-client li:nth-child(1) .ani-image-three{
-  left: -7%;
-  top: 114px;
-  height: 50px;
-  width: 50px;
-}
-
-
-.why-choose-us .overall-client li:nth-child(1) .ani-image-four{
-  left: 44%;
-  top: -16px;
-  height: 30px;
-  width: 30px;
-}
-
-.ani-image{
+.why-choose-us .ani-image {
   position: absolute;
   background-color: transparent;
   border-radius: 100%;
   z-index: 2;
-  transition: all .3s;
+  transition: all 0.3s;
   background-color: transparent;
   border-radius: 100%;
 }
- img{
-width: 100%;
-height: 100;
+/*=========Multi-use=========*/
+
+/*===Ani-one===*/
+
+.why-choose-us li:nth-child(1) .ani-image-one {
+  right: -6%;
+  top: 52%;
+  position: absolute;
+  height: 50px;
+  width: 50px;
 }
-/*====Why-choose-us====*/
+
+.why-choose-us li:nth-child(1) .ani-dt-two {
+  top: 86%;
+  right: 15%;
+}
+
+.why-choose-us li:nth-child(1) .ani-image-two {
+  height: 30px;
+  width: 30px;
+  right: 46%;
+  bottom: -4%;
+}
+
+.why-choose-us li:nth-child(1) .ani-dt-three {
+  top: 86%;
+  left: 15%;
+}
+
+.why-choose-us li:nth-child(1) .ani-dt-four {
+  top: 13%;
+  left: 15%;
+}
+
+.why-choose-us li:nth-child(1) .ani-image-three {
+  left: -7%;
+  top: 39%;
+  height: 50px;
+  width: 50px;
+}
+
+.why-choose-us li:nth-child(1) .ani-image-four {
+  left: 54%;
+  top: -3%;
+  height: 30px;
+  width: 30px;
+}
+
+/*===Ani-one===*/
+
+/*===Ani-two===*/
+
+.why-choose-us li:nth-child(2) .ani-dt-one {
+  top: 64%;
+  left: 97%;
+}
+
+.why-choose-us li:nth-child(2) .ani-image-two {
+  height: 30px;
+  width: 30px;
+  right: 70%;
+  bottom: 2%;
+}
+
+.why-choose-us li:nth-child(2) .ani-dt-two {
+  top: 31%;
+  left: 2%;
+}
+
+.why-choose-us li:nth-child(2) .ani-image-three {
+  height: 30px;
+  width: 30px;
+  right: 27%;
+  top: -2%;
+}
+
+/*===Ani-two===*/
+.why-choose-us li:nth-child(3) .ani-dt-one {
+  top: 32%;
+  left: 96%;
+}
+
+.why-choose-us li:nth-child(3) .ani-image-two {
+  height: 30px;
+  width: 30px;
+  right: 28%;
+  bottom: -5%;
+}
+
+.why-choose-us li:nth-child(3) .ani-dt-two {
+  top: 53%;
+  left: -2%;
+}
+
+.why-choose-us li:nth-child(3) .ani-image-three {
+  height: 30px;
+  width: 30px;
+  right: 58%;
+  top: -7%;
+}
+
+/*===Ani-three===*/
+
+/*===Ani-four===*/
+.why-choose-us li:nth-child(4) .ani-dt-one {
+  top: 44%;
+  left: 98%;
+}
+
+.why-choose-us li:nth-child(4) .ani-image-two {
+  height: 30px;
+  width: 30px;
+  left: -11%;
+  top: 38%;
+}
+.why-choose-us .overall-client li:nth-child(4) .animation-wrapper{
+  padding: 0;
+}
+/*===Ani-four===*/
+
