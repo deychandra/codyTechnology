@@ -1,5 +1,6 @@
+//====We-serve-carousel
 $(document).ready(function () {
-  var owl = $(".owl-carousel");
+  var owl = $(".we-serve .owl-carousel");
   owl.owlCarousel({
     loop: true,
     margin: 10,
@@ -10,42 +11,41 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     items: 2.4,
     onTranslate: progressBar,
-    responsive:{
-      0:{
-        items:1.4,
+    responsive: {
+      0: {
+        items: 1.4,
       },
-      768:{
-          
-          items:2.4,
+      768: {
+
+        items: 2.4,
       },
-      1000:{
-          items:2.4,
+      1000: {
+        items: 2.4,
       }
-  }
+    }
   });
 
-  $(".customNextBtn").click(function () {
+  $(".we-serve .customNextBtn").click(function () {
     owl.trigger('next.owl.carousel');
   });
 
-  $(".customPrevBtn").click(function () {
+  $(".we-serve .customPrevBtn").click(function () {
     owl.trigger('prev.owl.carousel');
   });
 
-  // Progress Bar
   var progress = 0;
   function progressBar(event) {
     var autoplayTimeout = owl.data('owl.carousel').options.autoplayTimeout;
-    var interval = 10;  // Progress bar will update every 10ms
+    var interval = 10;
     var total = autoplayTimeout / interval;
 
     progress = 0;
-    $(".c-progress-bar").css("width", "0%");
+    $(".we-serve .c-progress-bar").css("width", "0%");
 
     var progressInterval = setInterval(function () {
       progress++;
       var width = (progress / total) * 100;
-      $(".c-progress-bar").css("width", width + "%");
+      $(".we-serve .c-progress-bar").css("width", width + "%");
 
       if (progress >= total) {
         clearInterval(progressInterval);
@@ -53,15 +53,73 @@ $(document).ready(function () {
     }, interval);
   }
 });
+//====We-serve-carousel
 
 
 
-// Get the elements
+
+
+//====hamburger
 const hamburger = document.querySelector('.toggle-hamburger');
 const header = document.querySelector('header');
-
-// Add event listener for click
 hamburger.addEventListener('click', function () {
-  // Toggle the 'active' class on the <header> element
   header.classList.toggle('open_nav');
 });
+//====hamburger
+
+
+
+
+// ====case-studies-carousel
+$(document).ready(function () {
+  var owl = $(".case-studies .owl-carousel");
+  owl.owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    items: 1,
+    onTranslate: progressBarnew,
+  });
+
+  $(".case-studies .customNextBtn").click(function () {
+    owl.trigger('next.owl.carousel');
+  });
+
+  $(".case-studies .customPrevBtn").click(function () {
+    owl.trigger('prev.owl.carousel');
+  });
+
+  var progress = 0;
+  function progressBarnew(event) {
+    var autoplayTimeoutnew = owl.data('owl.carousel').options.autoplayTimeout;
+    var intervalnew = 10;
+    var total = autoplayTimeoutnew / intervalnew;
+
+    progress = 0;
+    $(".case-studies .c-progress-bar").css("width", "0%");
+
+    var progressIntervalnew = setInterval(function () {
+      progress++;
+      var width = (progress / total) * 100;
+      $(".case-studies .c-progress-bar").css("width", width + "%");
+
+      if (progress >= total) {
+        clearInterval(progressIntervalnew);
+      }
+    }, intervalnew);
+  }
+});
+//====case-studies-carousel
+
+
+
+
+
+
+
+
+

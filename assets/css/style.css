@@ -168,11 +168,10 @@ header .hamburger {
   background-color: #ffffff;
   padding: 5px 5px 5px 5px;
   border-radius: 40px;
-  transition: all 0.4s  ease-in;
+  transition: all 0.4s ease-in;
 }
 
 header.open_nav .hamburger {
-
   padding: 5px 5px 5px 35px;
 }
 
@@ -792,7 +791,10 @@ header li a:hover {
   font-weight: 400;
   line-height: 70px;
 }
-
+.we-serve p {
+  max-width: 461px;
+  width: 100%;
+}
 .we-serve .subheading {
   max-width: 390px;
   width: 100%;
@@ -878,3 +880,170 @@ header li a:hover {
 }
 
 /*====We-serve====*/
+
+/*====case-studies====*/
+.access-btn {
+  padding: 6px 30px 6px 6px;
+  border-radius: 66px;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease-out;
+  background-color: #f0f0f0;
+  color: #3e3e3e;
+}
+
+.access-btn span {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--white);
+}
+.case-studies .subheading {
+  max-width: 566px;
+  width: 100%;
+}
+.access-btn:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.case-studies .slider-carousel {
+  border-radius: 30px;
+  padding: 30px;
+  min-height: 386px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.case-studies .slider-carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.case-studies .case-s-slider-wraper {
+  padding-left: 15px;
+}
+.case-studies .case-studies-slider {
+  margin-top: 50px;
+  padding-left: calc((100vw - 1260px) / 2);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.case-studies .slider h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 375px;
+  width: 100%;
+  margin-bottom: 25px;
+  color: var(--black);
+}
+
+.case-studies .slider p {
+  max-width: 290px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.round-btn {
+  border: 1px solid #000000;
+  color: var(--black);
+  padding: 15px 45px;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 50px;
+  transition: all 0.5s ease-in;
+}
+.round-btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.case-studies .slider {
+  width: 50%;
+}
+.case-studies .slider-card {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.case-studies .wrap {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  margin-top: 40px;
+}
+.case-studies .custom-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.case-studies .custom-nav button {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: #e9efe4;
+  width: 73px;
+  height: 73px;
+  border-radius: 100%;
+}
+
+.case-studies .progress-bar-wrapper {
+  max-width: 250px;
+  height: 8px;
+  width: 100%;
+  background-color: #ebebeb;
+  border-radius: 34px;
+}
+.case-studies .c-progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #555555;
+  border-radius: 34px;
+}
+.case-studies .slider-card .bx {
+  width: 267px;
+  min-width: 267px;
+  height: 203px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  background-color: #555555;
+}
+.case-studies .slider-card-wrap::-webkit-scrollbar {
+  display: none;
+}
+.case-studies .slider-card-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  transition: transform 1000ms;
+  overscroll-behavior-x: contain;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+/*====case-studies====*/
