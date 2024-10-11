@@ -1,0 +1,101 @@
+@media only screen and (max-width: 1400px) {
+  .we-serve .s-box strong {
+    font-size: 45px;
+    line-height: 49px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header li {
+    padding-right: 25px;
+  }
+  .banner h1 {
+    font-size: 50px;
+    max-width: 810px;
+    width: 100%;
+    margin: auto;
+  }
+  .banner {
+    height: 700px;
+  }
+  .heading {
+    font-size: 50px;
+    line-height: 58px;
+  }
+  .subheading {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header .header-wrap {
+    padding: 20px 0;
+  }
+  header nav {
+    position: absolute;
+    right: -100%;
+    top: 60px;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+  }
+  header.open_nav nav {
+    right: 0%;
+  }
+  header .hamburger {
+    display: block;
+  }
+  header li {
+    display: block;
+    padding: 0 0px 10px;
+  }
+  .banner {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .banner {
+    height: 420px;
+  }
+  .banner .btn-wrap {
+    margin-top: 20px;
+  }
+  .banner .main-container {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .banner h1 {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .banner small {
+    font-size: 14px;
+  }
+  .banner .btn-wrap {
+    gap: 10px;
+  }
+  .banner .main-container {
+    padding-top: 90px;
+  }
+  .slide-btn span {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+  }
+  .slide-btn {
+    font-size: 14px;
+    min-width: 200px;
+  }
+  .banner {
+    height: 375px;
+  }
+}
