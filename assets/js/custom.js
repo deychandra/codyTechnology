@@ -9,7 +9,19 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     items: 2.4,
-    onTranslate: progressBar
+    onTranslate: progressBar,
+    responsive:{
+      0:{
+        items:1.4,
+      },
+      768:{
+          
+          items:2.4,
+      },
+      1000:{
+          items:2.4,
+      }
+  }
   });
 
   $(".customNextBtn").click(function () {
