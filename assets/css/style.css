@@ -231,8 +231,6 @@ header li a:hover {
   }
 } */
 
-
-
 .banner .p-cloud-l {
   position: absolute;
   left: 0;
@@ -242,11 +240,11 @@ header li a:hover {
   animation: bounce 3s ease-in-out infinite;
 }
 
-@keyframes bounce{
+@keyframes bounce {
   0% {
     transform: translateY(-10px);
   }
-  
+
   50% {
     transform: translateY(10px);
   }
@@ -254,7 +252,6 @@ header li a:hover {
     transform: translateY(-10px);
   }
 }
-
 
 .banner .p-cloud-r {
   position: absolute;
@@ -427,6 +424,7 @@ header li a:hover {
   width: 100%;
   margin-top: 32px;
   padding: 30px;
+  margin-bottom: 20px;
 }
 .why-choose-us .counter strong {
   font-size: 45px;
@@ -434,10 +432,10 @@ header li a:hover {
   color: var(--black);
   display: block;
 }
-.why-choose-us .counter{
+.why-choose-us .counter {
   position: relative;
 }
-.why-choose-us .animate-position{
+.why-choose-us .animate-position {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -474,24 +472,22 @@ header li a:hover {
   top: 0;
   left: 0;
 }
-.why-choose-us li:first-child .animation-wrapper{
+.why-choose-us li:first-child .animation-wrapper {
   animation: moveAround 15s linear infinite;
 }
 
-.why-choose-us li:nth-child(2) .animation-wrapper{
+.why-choose-us li:nth-child(2) .animation-wrapper {
   animation: moveAround 10s linear infinite;
 }
 
-.why-choose-us li:nth-child(3) .animation-wrapper{
+.why-choose-us li:nth-child(3) .animation-wrapper {
   animation: moveAround 25s linear infinite;
 }
 
-.why-choose-us li:nth-child(4) .animation-wrapper{
+.why-choose-us li:nth-child(4) .animation-wrapper {
   animation: moveAround 35s linear infinite;
 }
 
-
-
 @keyframes moveAround {
   0% {
     transform: rotate(0deg);
@@ -510,23 +506,21 @@ header li a:hover {
   }
 }
 
-.why-choose-us li:nth-child(1) .ani-image{
+.why-choose-us li:nth-child(1) .ani-image {
   animation: moveAround 15s linear infinite reverse;
 }
 
-.why-choose-us li:nth-child(2) .ani-image{
+.why-choose-us li:nth-child(2) .ani-image {
   animation: moveAround 10s linear infinite reverse;
 }
 
-.why-choose-us li:nth-child(3) .ani-image{
+.why-choose-us li:nth-child(3) .ani-image {
   animation: moveAround 25s linear infinite reverse;
 }
 
-.why-choose-us li:nth-child(4) .ani-image{
+.why-choose-us li:nth-child(4) .ani-image {
   animation: moveAround 35s linear infinite reverse;
 }
-
-
 
 @keyframes moveAround {
   0% {
@@ -545,7 +539,6 @@ header li a:hover {
     transform: rotate(360deg);
   }
 }
-
 
 .why-choose-us .overall-client li:nth-child(2) {
   height: 70%;
@@ -574,8 +567,6 @@ header li a:hover {
   top: 25%;
   left: 93%;
 }
-
-/*====Why-choose-us====*/
 
 /*=========Multi-use=========*/
 .why-choose-us .ani-image img {
@@ -714,8 +705,151 @@ header li a:hover {
   left: -11%;
   top: 38%;
 }
-.why-choose-us .overall-client li:nth-child(4) .animation-wrapper{
+.why-choose-us .overall-client li:nth-child(4) .animation-wrapper {
   padding: 0;
 }
 /*===Ani-four===*/
 
+.why-choose-us .apd {
+  height: 321px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.why-choose-us .apd span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--black);
+  display: inline-block;
+  padding: 20px;
+}
+.why-choose-us .apd img,
+.why-choose-us .p-dne img,
+.why-choose-us .p-dne img {
+  width: 100%;
+  height: 100%;
+}
+.why-choose-us .p-dne {
+  height: 196px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.why-choose-us .p-dne img {
+  width: 100%;
+  height: 100%;
+}
+.why-choose-us .p-dne > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 15px;
+}
+.why-choose-us .p-dne strong {
+  display: block;
+  font-size: 30px;
+  color: var(--white);
+  font-weight: 700;
+}
+.why-choose-us .p-dne span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+}
+/*====Why-choose-us====*/
+
+/*====We-serve====*/
+.subheading {
+  color: var(--black);
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.we-serve .subheading {
+  max-width: 390px;
+  width: 100%;
+}
+.we-serve .serve-slider {
+  margin-top: 50px;
+}
+.we-serve .s-box {
+  height: 376px;
+  position: relative;
+}
+.we-serve .bx-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  box-shadow: -25.13px 25.13px 25.13px 0px #ffffff25 inset,
+    25.13px -25.13px 25.13px 0px #a0a0a025 inset;
+  backdrop-filter: blur(26px);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
+.we-serve .s-box img {
+  width: 100%;
+  height: 100%;
+}
+.we-serve {
+  overflow-x: hidden;
+}
+.we-serve .s-box strong {
+  text-align: center;
+  font-size: 65px;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 70px;
+}
+.we-serve .custom-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.we-serve .wrap {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  margin-top: 40px;
+}
+
+.we-serve .custom-nav button {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: #e9efe4;
+  width: 73px;
+  height: 73px;
+  border-radius: 100%;
+}
+
+.we-serve .progress-bar-wrapper {
+  max-width: 421px;
+  height: 8px;
+  width: 100%;
+  background-color: #ebebeb;
+  border-radius: 34px;
+}
+
+.we-serve .c-progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #555555;
+  border-radius: 34px;
+}
+
+/*====We-serve====*/
