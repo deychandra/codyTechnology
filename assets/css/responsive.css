@@ -40,11 +40,17 @@
     width: 50px;
     height: 50px;
   }
+  .contact-us h2 {
+    font-size: 100px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   header .header-wrap {
     padding: 20px 0;
+  }
+  .contact-us h2 {
+    font-size: 60px;
   }
   header nav {
     position: absolute;
@@ -98,12 +104,23 @@
   .case-studies .case-s-slider-wraper {
     padding-right: 15px;
   }
+  .contact-us .form-control {
+    padding: 20px 20px;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .banner h1 {
     font-size: 40px;
     line-height: 58px;
+  }
+  .contact-us .submit-btn {
+    height: 120px;
+    margin-top: 25px;
+  }
+  .contact-us h2 {
+    font-size: 40px;
   }
   .banner {
     height: 420px;
@@ -148,6 +165,16 @@
   }
   .case-studies .wrap {
     gap: 0 15px;
+  }
+  .contact-us .submit-btn .submit::before {
+    height: 110px;
+    width: 110px;
+  }
+  .contact-us .submit-btn .submit {
+    font-size: 20px;
+  }
+  .contact-us form {
+    margin-top: 40px;
   }
 }
 
@@ -253,5 +280,31 @@
   }
   .case-studies .wrap {
     margin-top: 20px;
+  }
+  .contact-us textarea.form-control {
+    border-radius: 20px;
+    height: 150px;
+  }
+  .contact-us .submit-btn .submit::before {
+    height: 70px;
+    width: 70px;
+  }
+  .contact-us .submit-btn .submit {
+    font-size: 16px;
+  }
+  .contact-us .submit-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contact-us .submit-btn {
+    height: 80px;
+    border-radius: 10px;
+  }
+  .contact-us form {
+    margin-top: 30px;
+  }
+  .contact-us h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
   }
 }
