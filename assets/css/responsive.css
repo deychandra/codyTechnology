@@ -26,17 +26,20 @@
     font-size: 45px;
     line-height: 50px;
   }
-  .p-top{
+  .p-top {
     padding-top: 90px;
   }
-  .p-btm{
+  .p-btm {
     padding-bottom: 90px;
   }
-  .we-serve .custom-nav button{
+  .we-serve .custom-nav button {
     width: 50px;
     height: 50px;
   }
-
+  .case-studies .custom-nav button {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -65,29 +68,36 @@
   .banner {
     height: 600px;
   }
-  .p-top{
+  .p-top {
     padding-top: 50px;
   }
-  .p-btm{
+  .p-btm {
     padding-bottom: 50px;
   }
   .we-serve .s-box {
     height: 250px;
-}
-.we-serve .s-box strong {
-  font-size: 35px;
-  line-height: 40px;
-}
-.we-serve .progress-bar-wrapper{
-  max-width: 280px;
-}
-.banner h1{
-  line-height: 56px;
-}
-.why-choose-us .overall-client,
-.why-choose-us .h-client{
-  margin-top: 20px;
-}
+  }
+  .we-serve .s-box strong {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .we-serve .progress-bar-wrapper {
+    max-width: 280px;
+  }
+  .banner h1 {
+    line-height: 56px;
+  }
+  .why-choose-us .overall-client,
+  .why-choose-us .h-client {
+    margin-top: 20px;
+  }
+  .case-studies .slider,
+  .case-studies .slider-card {
+    width: 100%;
+  }
+  .case-studies .case-s-slider-wraper {
+    padding-right: 15px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -104,32 +114,41 @@
   .banner .main-container {
     padding-top: 120px;
   }
-  .p-top{
+  .p-top {
     padding-top: 40px;
   }
-  .p-btm{
+  .p-btm {
     padding-bottom: 40px;
   }
   .we-serve .s-box {
     height: 200px;
-}
-.we-serve .s-box strong {
-  font-size: 30px;
-  line-height: 35px;
-}
-.heading {
-  font-size: 40px;
-  line-height: 48px;
-}
-.we-serve .progress-bar-wrapper{
-  max-width: 180px;
-}
-.we-serve .custom-nav{
-  gap: 15px;
-}
-.subheading{
-  font-size: 26px;
-}
+  }
+  .we-serve .s-box strong {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .we-serve .progress-bar-wrapper {
+    max-width: 180px;
+  }
+  .we-serve .custom-nav {
+    gap: 15px;
+  }
+  .subheading {
+    font-size: 26px;
+  }
+  .case-studies .subheading {
+    line-height: normal;
+  }
+  .case-studies .custom-nav {
+    gap: 15px;
+  }
+  .case-studies .wrap {
+    gap: 0 15px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -158,10 +177,10 @@
   .banner {
     height: 375px;
   }
-  .p-top{
+  .p-top {
     padding-top: 30px;
   }
-  .p-btm{
+  .p-btm {
     padding-bottom: 30px;
   }
   .we-serve .s-box strong {
@@ -171,31 +190,68 @@
   .heading {
     font-size: 26px;
     line-height: 34px;
-}
-  .we-serve .wrap{
+  }
+  .we-serve .wrap {
     gap: 0 15px;
     margin-top: 20px;
   }
-  .we-serve .custom-nav button{
+  .we-serve .custom-nav button {
     width: 40px;
     height: 40px;
   }
-  .we-serve .custom-nav svg{
+  .we-serve .custom-nav svg {
     width: 20px;
   }
   .banner small {
     max-width: 350px;
     margin: auto;
     width: 100%;
-}
-.subheading{
-  font-size: 20px;
-  font-weight: normal;
-}
-.we-serve .s-box{
-  height: 150px;
-}
-header nav{
-  width: 100%;
-}
+  }
+  .subheading {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .we-serve .s-box {
+    height: 150px;
+  }
+  header nav {
+    width: 100%;
+  }
+  .case-studies .slider-carousel {
+    padding: 15px;
+    min-height: 260px;
+  }
+  .case-studies .slider-card .bx {
+    height: 170px;
+    padding: 15px;
+  }
+  .case-studies .content {
+    margin-top: 20px;
+  }
+  .case-studies .content p {
+    margin-bottom: 20px;
+  }
+  .round-btn {
+    padding: 6px 30px;
+    font-size: 15px;
+  }
+  .why-choose-us .overall-client ul {
+    width: 350px;
+    height: 350px;
+  }
+  .case-studies .subheading,
+  .case-studies .case-studies-slider {
+    margin-top: 10px;
+  }
+  .case-studies .slider h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .case-studies .custom-nav button {
+    width: 50px;
+    height: 50px;
+  }
+  .case-studies .wrap {
+    margin-top: 20px;
+  }
 }

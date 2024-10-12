@@ -1096,6 +1096,9 @@ header li a:hover {
 /*====case-studies====*/
 
 /*====Contact-us====*/
+.contact-us {
+  display: none;
+}
 .contact-us h2 {
   text-align: center;
   font-size: 140px;
@@ -1124,7 +1127,7 @@ header li a:hover {
   background-color: #ff6868;
   border-radius: 30px;
 }
-.contact-us .submit-btn  .submit {
+.contact-us .submit-btn .submit {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -1140,7 +1143,7 @@ header li a:hover {
   position: relative;
   z-index: 1;
 }
-.contact-us .submit-btn  .submit::before{
+.contact-us .submit-btn .submit::before {
   content: "";
   width: 170px;
   height: 170px;
@@ -1151,9 +1154,14 @@ header li a:hover {
   transform: translate(-50%, -50%);
   z-index: -1;
   opacity: 0.8;
-  background: radial-gradient(circle, rgb(255 255 255 / 43%) 0%, rgb(255 255 255 / 13%) 35%, rgb(255 255 255 / 0%) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(255 255 255 / 43%) 0%,
+    rgb(255 255 255 / 13%) 35%,
+    rgb(255 255 255 / 0%) 100%
+  );
 }
-.contact-us form{
+.contact-us form {
   margin-top: 80px;
 }
 /*====Contact-us====*/

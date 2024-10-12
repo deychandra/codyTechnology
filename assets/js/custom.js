@@ -37,7 +37,7 @@ $(document).ready(function () {
   function progressBarWeServe(event) {
     // Clear any previous interval to avoid multiple progress bars
     clearInterval(progressIntervalWeServe);
-    
+
     var autoplayTimeout = owlWeServe.data('owl.carousel').options.autoplayTimeout;
     var interval = 10;
     var total = autoplayTimeout / interval;
@@ -112,7 +112,7 @@ $(document).ready(function () {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 2.3,
+        items: 1.3,
       },
       600: {
         items: 2.3,
