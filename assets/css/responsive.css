@@ -114,6 +114,7 @@
   }
   footer .lts-connect p{
     margin: 0 auto 20px auto;
+    font-size: 14px;
   }
   footer .subheading{
     margin-bottom: 10px;
@@ -325,5 +326,8 @@
   }
   footer .widget > div {
     margin-bottom: 10px;
+}
+footer .subheading {
+  margin-bottom: 0;
 }
 }
