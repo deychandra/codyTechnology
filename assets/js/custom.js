@@ -72,7 +72,7 @@ hamburger.addEventListener('click', function () {
 
 // ====case-studies-carousel
 $(document).ready(function () {
-  var owl = $(".case-studies .owl-carousel");
+  var owl = $("#caseSsliderone");
   owl.owlCarousel({
     loop: true,
     margin: 10,
@@ -93,21 +93,21 @@ $(document).ready(function () {
     owl.trigger('prev.owl.carousel');
   });
 
-  var progress = 0;
+  var progressnew = 0;
   function progressBarnew(event) {
     var autoplayTimeoutnew = owl.data('owl.carousel').options.autoplayTimeout;
     var intervalnew = 10;
     var total = autoplayTimeoutnew / intervalnew;
 
-    progress = 0;
-    $(".case-studies .c-progress-bar").css("width", "0%");
+    progressnew = 0;
+    $(".slider .c-progress-bar").css("width", "0%");
 
     var progressIntervalnew = setInterval(function () {
-      progress++;
-      var width = (progress / total) * 100;
-      $(".case-studies .c-progress-bar").css("width", width + "%");
+      progressnew++;
+      var width = (progressnew / total) * 100;
+      $(".slider .c-progress-bar").css("width", width + "%");
 
-      if (progress >= total) {
+      if (progressnew >= total) {
         clearInterval(progressIntervalnew);
       }
     }, intervalnew);
@@ -119,7 +119,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 $('#casestudiesTwo').owlCarousel({
   loop:true,
-  margin:10,
+  margin:20,
   nav:false,
   dots:false,
   items:2.5,
@@ -137,7 +137,6 @@ $('#casestudiesTwo').owlCarousel({
       }
   }
 })
-
 });
 
 

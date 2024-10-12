@@ -1023,8 +1023,7 @@ header li a:hover {
   border-radius: 34px;
 }
 .case-studies .slider-card .bx {
-  width: 267px;
-  min-width: 267px;
+  width: 100%;
   height: 203px;
   border-radius: 30px;
   overflow: hidden;
