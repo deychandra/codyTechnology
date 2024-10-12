@@ -108,6 +108,16 @@
     padding: 20px 20px;
     font-size: 18px;
   }
+  footer .lts-connect{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  footer .lts-connect p{
+    margin: 0 auto 20px auto;
+  }
+  footer .subheading{
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -307,4 +317,13 @@
     font-size: 30px;
     letter-spacing: 5px;
   }
+  .why-choose-us .t-btm{
+    margin-top: 20px;
+  }
+  footer .widget h5{
+    margin-bottom: 10px;
+  }
+  footer .widget > div {
+    margin-bottom: 10px;
+}
 }
