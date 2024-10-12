@@ -945,6 +945,8 @@ header li a:hover {
   align-items: flex-start;
   gap: 20px;
   overflow-x: hidden;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .case-studies .slider h4 {
   font-size: 18px;
@@ -977,11 +979,10 @@ header li a:hover {
   color: var(--white);
 }
 .case-studies .slider {
-  width: 50%;
+  width: calc(50% - 20px);
 }
 .case-studies .slider-card {
-  flex-grow: 1;
-  overflow: hidden;
+  width: 50%;
 }
 
 .case-studies .wrap {
@@ -1063,5 +1064,33 @@ header li a:hover {
 }
 .case-studies .slider-card .bx a:hover {
   width: 70px;
+}
+.case-studies .content {
+  margin-top: 40px;
+}
+.case-studies .content p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 461px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.case-studies .content a{
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+.case-studies .content a::after{
+  content: '';
+  width: 133px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--black);
 }
 /*====case-studies====*/

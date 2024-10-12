@@ -1,7 +1,7 @@
-//====We-serve-carousel
 $(document).ready(function () {
-  var owl = $(".we-serve .owl-carousel");
-  owl.owlCarousel({
+  //====We-serve-carousel
+  var owlWeServe = $(".we-serve .owl-carousel");
+  owlWeServe.owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -10,13 +10,12 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     items: 2.4,
-    onTranslate: progressBar,
+    onTranslate: progressBarWeServe,
     responsive: {
       0: {
         items: 1.4,
       },
       768: {
-
         items: 2.4,
       },
       1000: {
@@ -26,54 +25,40 @@ $(document).ready(function () {
   });
 
   $(".we-serve .customNextBtn").click(function () {
-    owl.trigger('next.owl.carousel');
+    owlWeServe.trigger('next.owl.carousel');
   });
 
   $(".we-serve .customPrevBtn").click(function () {
-    owl.trigger('prev.owl.carousel');
+    owlWeServe.trigger('prev.owl.carousel');
   });
 
-  var progress = 0;
-  function progressBar(event) {
-    var autoplayTimeout = owl.data('owl.carousel').options.autoplayTimeout;
+  var progressWeServe = 0;
+  var progressIntervalWeServe;
+  function progressBarWeServe(event) {
+    // Clear any previous interval to avoid multiple progress bars
+    clearInterval(progressIntervalWeServe);
+    
+    var autoplayTimeout = owlWeServe.data('owl.carousel').options.autoplayTimeout;
     var interval = 10;
     var total = autoplayTimeout / interval;
 
-    progress = 0;
+    progressWeServe = 0;
     $(".we-serve .c-progress-bar").css("width", "0%");
 
-    var progressInterval = setInterval(function () {
-      progress++;
-      var width = (progress / total) * 100;
+    progressIntervalWeServe = setInterval(function () {
+      progressWeServe++;
+      var width = (progressWeServe / total) * 100;
       $(".we-serve .c-progress-bar").css("width", width + "%");
 
-      if (progress >= total) {
-        clearInterval(progressInterval);
+      if (progressWeServe >= total) {
+        clearInterval(progressIntervalWeServe);
       }
     }, interval);
   }
-});
-//====We-serve-carousel
 
-
-
-
-
-//====hamburger
-const hamburger = document.querySelector('.toggle-hamburger');
-const header = document.querySelector('header');
-hamburger.addEventListener('click', function () {
-  header.classList.toggle('open_nav');
-});
-//====hamburger
-
-
-
-
-// ====case-studies-carousel
-$(document).ready(function () {
-  var owl = $("#caseSsliderone");
-  owl.owlCarousel({
+  //====Case-studies-carousel
+  var owlCaseStudies = $("#caseSsliderone");
+  owlCaseStudies.owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -82,62 +67,66 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     items: 1,
-    onTranslate: progressBarnew,
+    onTranslate: progressBarCaseStudies
   });
 
   $(".case-studies .customNextBtn").click(function () {
-    owl.trigger('next.owl.carousel');
+    owlCaseStudies.trigger('next.owl.carousel');
   });
 
   $(".case-studies .customPrevBtn").click(function () {
-    owl.trigger('prev.owl.carousel');
+    owlCaseStudies.trigger('prev.owl.carousel');
   });
 
-  var progressnew = 0;
-  function progressBarnew(event) {
-    var autoplayTimeoutnew = owl.data('owl.carousel').options.autoplayTimeout;
-    var intervalnew = 10;
-    var total = autoplayTimeoutnew / intervalnew;
+  var progressCaseStudies = 0;
+  var progressIntervalCaseStudies;
+  function progressBarCaseStudies(event) {
+    // Clear previous progress interval
+    clearInterval(progressIntervalCaseStudies);
 
-    progressnew = 0;
-    $(".slider .c-progress-bar").css("width", "0%");
+    var autoplayTimeout = owlCaseStudies.data('owl.carousel').options.autoplayTimeout;
+    var interval = 10;
+    var total = autoplayTimeout / interval;
 
-    var progressIntervalnew = setInterval(function () {
-      progressnew++;
-      var width = (progressnew / total) * 100;
-      $(".slider .c-progress-bar").css("width", width + "%");
+    progressCaseStudies = 0;
+    $(".case-studies .c-progress-bar").css("width", "0%");
 
-      if (progressnew >= total) {
-        clearInterval(progressIntervalnew);
+    progressIntervalCaseStudies = setInterval(function () {
+      progressCaseStudies++;
+      var width = (progressCaseStudies / total) * 100;
+      $(".case-studies .c-progress-bar").css("width", width + "%");
+
+      if (progressCaseStudies >= total) {
+        clearInterval(progressIntervalCaseStudies);
       }
-    }, intervalnew);
+    }, interval);
   }
-});
-//====case-studies-carousel
 
-
-$(document).ready(function () {
-$('#casestudiesTwo').owlCarousel({
-  loop:true,
-  margin:20,
-  nav:false,
-  dots:false,
-  items:2.5,
-  responsiveClass:true,
-  responsive:{
-      0:{
-          items:2.3,
-          
+  //====casestudiesTwo-carousel
+  $('#casestudiesTwo').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: false,
+    items: 2.5,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 2.3,
       },
-      600:{
-          items:2.3,
+      600: {
+        items: 2.3,
       },
-      1000:{
-          items:2.3,
+      1000: {
+        items: 2.3,
       }
-  }
-})
+    }
+  });
+
+  //====hamburger
+  const hamburger = document.querySelector('.toggle-hamburger');
+  const header = document.querySelector('header');
+  hamburger.addEventListener('click', function () {
+    header.classList.toggle('open_nav');
+  });
 });
-
-
-
