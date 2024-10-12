@@ -1234,4 +1234,17 @@ footer .widget > div {
 footer .widget > div:last-child {
   margin-bottom: 0;
 }
+footer .social ul{
+display: flex;
+align-items: center;
+gap: 30px;
+}
+footer .social ul a{
+  color: #5B5B5B;
+  font-size: 14px;
+  font-weight: 300;
+}
+footer .social ul svg{
+  margin-right: 10px;
+}
 /*====Footer====*/
