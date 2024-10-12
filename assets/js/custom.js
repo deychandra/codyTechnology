@@ -116,10 +116,29 @@ $(document).ready(function () {
 //====case-studies-carousel
 
 
+$(document).ready(function () {
+$('#casestudiesTwo').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  dots:false,
+  items:2.5,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:2.3,
+          
+      },
+      600:{
+          items:2.3,
+      },
+      1000:{
+          items:2.3,
+      }
+  }
+})
 
-
-
-
+});
 
 
 
