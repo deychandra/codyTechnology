@@ -978,13 +978,10 @@ header li a:hover {
 }
 .case-studies .slider {
   width: 50%;
-  max-width: 50%;
-  flex-basis: 50%;
 }
 .case-studies .slider-card {
-  flex-grow: 2;
+  flex-grow: 1;
   overflow: hidden;
-  flex-basis: auto;
 }
 
 .case-studies .wrap {
