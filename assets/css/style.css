@@ -1171,7 +1171,7 @@ footer .slide-btn.white-btn {
   background-color: #f0f0f0;
   min-width: 200px;
 }
-.slide-btn.white-btn span {
+footer  .slide-btn.white-btn span {
   background-color: #3e3e3e;
 }
 footer .slide-btn.white-btn:hover path {
