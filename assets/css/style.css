@@ -1076,7 +1076,7 @@ header li a:hover {
   width: 100%;
   margin-bottom: 25px;
 }
-.case-studies .content a{
+.case-studies .content a {
   color: var(--black);
   font-size: 18px;
   font-weight: 600;
@@ -1085,8 +1085,8 @@ header li a:hover {
   gap: 15px;
   position: relative;
 }
-.case-studies .content a::after{
-  content: '';
+.case-studies .content a::after {
+  content: "";
   width: 133px;
   height: 2px;
   position: absolute;
@@ -1096,11 +1096,64 @@ header li a:hover {
 /*====case-studies====*/
 
 /*====Contact-us====*/
-.contact-us h2{
-text-align: center;
-font-size: 140px;
-line-height: 1.5;
-font-weight: 500;
-letter-spacing: 10px;
+.contact-us h2 {
+  text-align: center;
+  font-size: 140px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+.contact-us .form-control {
+  background-color: #f3f3f3;
+  border-radius: 100px;
+  padding: 30px 30px;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  font-size: 22px;
+  font-weight: 400;
+  color: #4e4e4e;
+}
+.contact-us textarea.form-control {
+  resize: none;
+  border-radius: 50px;
+  height: 250px;
+}
+.contact-us .submit-btn {
+  height: 100%;
+  background-color: #ff6868;
+  border-radius: 30px;
+}
+.contact-us .submit-btn  .submit {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+.contact-us .submit-btn  .submit::before{
+  content: "";
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.8;
+  background: radial-gradient(circle, rgb(255 255 255 / 43%) 0%, rgb(255 255 255 / 13%) 35%, rgb(255 255 255 / 0%) 100%);
+}
+.contact-us form{
+  margin-top: 80px;
 }
 /*====Contact-us====*/
