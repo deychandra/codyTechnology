@@ -1094,3 +1094,13 @@ header li a:hover {
   background-color: var(--black);
 }
 /*====case-studies====*/
+
+/*====Contact-us====*/
+.contact-us h2{
+text-align: center;
+font-size: 140px;
+line-height: 1.5;
+font-weight: 500;
+letter-spacing: 10px;
+}
+/*====Contact-us====*/
