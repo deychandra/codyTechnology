@@ -1356,6 +1356,9 @@ footer .ftr-bnr img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* animation: expOne 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-one{
   animation: expOne 1s linear 1s forwards;
 }
 .our-experts span {
@@ -1394,9 +1397,10 @@ footer .ftr-bnr img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* animation: expTwo 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-two{
   animation: expTwo 1s linear 1s forwards;
-  
- 
 }
 .our-experts .exp-two span {
   right: 100%;
@@ -1424,6 +1428,9 @@ footer .ftr-bnr img {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  /* animation: expThree 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-three{
   animation: expThree 1s linear 1s forwards;
 }
 .our-experts .exp-three span {
@@ -1455,6 +1462,9 @@ footer .ftr-bnr img {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  /* animation: expFour 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-four{
   animation: expFour 1s linear 1s forwards;
 }
 .our-experts .exp-four span {
@@ -1486,6 +1496,9 @@ footer .ftr-bnr img {
   transform: translate(50%, 50%);
   animation: expFive 1s linear 1s forwards;
 }
+.our-experts.start-animation .exp-five{
+  animation: expFive 1s linear 1s forwards;
+}
 .our-experts .exp-five span {
   bottom: 100%;
   right: 0%;
@@ -1514,6 +1527,9 @@ footer .ftr-bnr img {
   bottom: 50%;
   right: 50%;
   transform: translate(50%, 50%);
+  /* animation: expSix 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-six{
   animation: expSix 1s linear 1s forwards;
 }
 .our-experts .exp-six span {
@@ -1543,6 +1559,9 @@ footer .ftr-bnr img {
   bottom: 50%;
   right: 50%;
   transform: translate(50%, 50%);
+  /* animation: expSeven 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-seven{
   animation: expSeven 1s linear 1s forwards;
 }
 
@@ -1573,6 +1592,9 @@ footer .ftr-bnr img {
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
+  /* animation: expEight 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-eight{
   animation: expEight 1s linear 1s forwards;
 }
 .our-experts .exp-eight span {
@@ -1602,6 +1624,9 @@ footer .ftr-bnr img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* animation: expNine 1s linear 1s forwards; */
+}
+.our-experts.start-animation .exp-nine{
   animation: expNine 1s linear 1s forwards;
 }
 .our-experts .exp-nine span {

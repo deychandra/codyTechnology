@@ -139,3 +139,29 @@ $(document).ready(function () {
 
 // // Set the height to 80% of the viewport height
 // aniContainer.style.height = '80vh';
+
+
+// Define the section element
+const section = document.querySelector('.our-experts');
+
+// Create a new IntersectionObserver instance
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !section.classList.contains('start-animation')) {
+      // Add the class when the section is first in view
+      section.classList.add('start-animation');
+    }
+  });
+});
+
+// Start observing the section
+observer.observe(section);
+
+// Check if the section is in view when the page loads
+window.addEventListener('load', () => {
+  const rect = section.getBoundingClientRect();
+  const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+  if (isVisible && !section.classList.contains('start-animation')) {
+    section.classList.add('start-animation');
+  }
+});
