@@ -1494,7 +1494,7 @@ footer .ftr-bnr img {
   bottom: 50%;
   right: 50%;
   transform: translate(50%, 50%);
-  animation: expFive 1s linear 1s forwards;
+  /* animation: expFive 1s linear 1s forwards; */
 }
 .our-experts.start-animation .exp-five{
   animation: expFive 1s linear 1s forwards;
