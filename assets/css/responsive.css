@@ -377,4 +377,7 @@
   .banner .w-cloud-r {
     bottom: 30px;
   }
+  footer .slide-btn.white-btn{
+    min-width: auto;
+  }
 }
