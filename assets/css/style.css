@@ -1356,9 +1356,26 @@ footer .ftr-bnr img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: expOne 2s linear 1s forwards;
+  animation: expOne 1s linear 1s forwards;
+}
+.our-experts span {
+  position: absolute;
+  white-space: nowrap;
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0;
 }
 
+.our-experts .exp-one span {
+  right: 100%;
+  background-color: #d7e4c0;
+  margin-right: 10px;
+  top: 0%;
+  animation: fadeInOut 8s infinite;
+  animation-delay: 2s;
+}
 @keyframes expOne {
   0% {
     top: 50%;
@@ -1377,7 +1394,17 @@ footer .ftr-bnr img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: expTwo 2s linear 1s forwards;
+  animation: expTwo 1s linear 1s forwards;
+  
+ 
+}
+.our-experts .exp-two span {
+  right: 100%;
+  top: 0%;
+  background-color: #FDE7E9;
+  margin-right: 10px;
+  animation: fadeInOut 8s infinite;
+  animation-delay: 2s;
 }
 @keyframes expTwo {
   0% {
@@ -1397,8 +1424,19 @@ footer .ftr-bnr img {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-  animation: expThree 2s linear 1s forwards;
+  animation: expThree 1s linear 1s forwards;
 }
+.our-experts .exp-three span {
+  right: 100%;
+  top: 0%;
+  background-color: #d7e4c0;
+  margin-right: 10px;
+  animation: fadeInOut 8s infinite;
+  animation-delay: 4s;
+}
+
+
+
 @keyframes expThree {
   0% {
     top: 50%;
@@ -1417,7 +1455,15 @@ footer .ftr-bnr img {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-  animation: expFour 2s linear 1s forwards;
+  animation: expFour 1s linear 1s forwards;
+}
+.our-experts .exp-four span {
+  right: 100%;
+  top: 0%;
+  background-color: #FDE7E9;
+  margin-right: 10px;
+  animation: fadeInOut 10s infinite;
+  animation-delay: 4s;
 }
 
 @keyframes expFour {
@@ -1438,7 +1484,15 @@ footer .ftr-bnr img {
   bottom: 50%;
   right: 50%;
   transform: translate(50%, 50%);
-  animation: expFive 2s linear 1s forwards;
+  animation: expFive 1s linear 1s forwards;
+}
+.our-experts .exp-five span {
+  bottom: 100%;
+  right: 0%;
+  background-color: #E9EEE2;
+  margin-bottom: 10px;
+  animation: fadeInOut 8s infinite;
+  animation-delay: 6s;
 }
 
 @keyframes expFive {
@@ -1460,7 +1514,15 @@ footer .ftr-bnr img {
   bottom: 50%;
   right: 50%;
   transform: translate(50%, 50%);
-  animation: expSix 2s linear 1s forwards;
+  animation: expSix 1s linear 1s forwards;
+}
+.our-experts .exp-six span {
+  top: 100%;
+  right: 0%;
+  background-color: #FDE7E9;
+  margin-top: 10px;
+  animation: fadeInOut 8s infinite;
+  animation-delay: 6s;
 }
 
 @keyframes expSix {
@@ -1470,7 +1532,7 @@ footer .ftr-bnr img {
   }
   100% {
     bottom: 7%;
-    right: 30%;         
+    right: 30%;
     transform: none;
   }
 }
@@ -1481,7 +1543,16 @@ footer .ftr-bnr img {
   bottom: 50%;
   right: 50%;
   transform: translate(50%, 50%);
-  animation: expSeven 2s linear 1s forwards;
+  animation: expSeven 1s linear 1s forwards;
+}
+
+.our-experts .exp-seven span {
+  left: 100%;
+  bottom: 0%;
+  background-color: #E9EEE2;
+  margin-left: 10px;
+  animation: fadeInOut 16s infinite;
+  animation-delay: 8s;
 }
 
 @keyframes expSeven {
@@ -1502,7 +1573,15 @@ footer .ftr-bnr img {
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  animation: expEight 2s linear 1s forwards;
+  animation: expEight 1s linear 1s forwards;
+}
+.our-experts .exp-eight span {
+  bottom: 100%;
+  right: 0%;
+  background-color: #FDE7E9;
+  margin-bottom: 10px;
+  animation: fadeInOut 18s infinite;
+  animation-delay: 8s;
 }
 
 @keyframes expEight {
@@ -1523,7 +1602,15 @@ footer .ftr-bnr img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: expNine 2s linear 1s forwards;
+  animation: expNine 1s linear 1s forwards;
+}
+.our-experts .exp-nine span {
+  top: 100%;
+  right: 0%;
+  background-color: #FDE7E9;
+  margin-top: 10px;
+  animation: fadeInOut 20s infinite;
+  animation-delay: 10s;
 }
 
 @keyframes expNine {
@@ -1539,9 +1626,28 @@ footer .ftr-bnr img {
   }
 }
 
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .our-experts .brdr {
   border-radius: 30px;
-  overflow: hidden;
   position: absolute;
 }
 .our-experts .brdr img {
