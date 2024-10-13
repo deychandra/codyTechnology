@@ -130,3 +130,12 @@ $(document).ready(function () {
     header.classList.toggle('open_nav');
   });
 });
+
+
+
+
+// // Select the element
+// const aniContainer = document.querySelector('.ani-container');
+
+// // Set the height to 80% of the viewport height
+// aniContainer.style.height = '80vh';

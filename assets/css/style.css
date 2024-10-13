@@ -1167,6 +1167,7 @@ header li a:hover {
 footer .slide-btn.white-btn {
   background-color: #f0f0f0;
   min-width: 200px;
+  text-transform: uppercase;
 }
 footer .slide-btn.white-btn span {
   background-color: #3e3e3e;
@@ -1276,17 +1277,71 @@ footer .copy-right span {
   font-weight: 300;
   display: block;
 }
-footer .copyRight-wrap{
+footer .copyRight-wrap {
   margin-top: 70px;
   margin-bottom: 30px;
 }
-footer .ftr-bnr{
-  background-color: #FF6C6C;
+footer .ftr-bnr {
+  background-color: #ff6c6c;
   padding: 50px 40px 0;
-
 }
-footer  .ftr-bnr img{
-width: 100%;
-height: auto;
+footer .ftr-bnr img {
+  width: 100%;
+  height: auto;
 }
 /*====Footer====*/
+
+/*====Footer====*/
+.our-experts .tx-bx {
+  text-align: center;
+}
+.our-experts .tx-bx p {
+  max-width: 416px;
+  width: 100%;
+  margin: auto;
+}
+.our-experts .heading{
+  margin-bottom: 30px;
+}
+.our-experts .ani-container{
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  position: relative;
+}
+
+
+.our-experts .round-container{
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  border: 1px solid green;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.our-experts .exp-one{
+width: 171px;
+height: 173px;
+}
+.our-experts .exp-two{
+  width: 184px;
+  height: 186px;
+  }
+  .our-experts .exp-three{
+    width: 167px;
+    height: 168px;
+    }
+
+.our-experts .brdr{
+  border-radius: 30px;
+  overflow: hidden;
+}
+.our-experts .brdr img{
+  width: 100%;
+  height: 100%;
+}
