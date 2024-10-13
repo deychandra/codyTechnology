@@ -1164,14 +1164,11 @@ header li a:hover {
 /*====Contact-us====*/
 
 /*====Footer====*/
-footer {
-  padding-bottom: 30px;
-}
 footer .slide-btn.white-btn {
   background-color: #f0f0f0;
   min-width: 200px;
 }
-footer  .slide-btn.white-btn span {
+footer .slide-btn.white-btn span {
   background-color: #3e3e3e;
 }
 footer .slide-btn.white-btn:hover path {
@@ -1234,17 +1231,62 @@ footer .widget > div {
 footer .widget > div:last-child {
   margin-bottom: 0;
 }
-footer .social ul{
-display: flex;
-align-items: center;
-gap: 30px;
+footer .social ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
 }
-footer .social ul a{
-  color: #5B5B5B;
+footer .social ul a {
+  color: #5b5b5b;
   font-size: 14px;
   font-weight: 300;
 }
-footer .social ul svg{
+footer .social ul svg {
   margin-right: 10px;
+}
+footer .social span {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black);
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 10px;
+}
+footer .social h6 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--black);
+}
+footer .copy-right strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 18px;
+  display: block;
+}
+footer .copy-right p {
+  color: #696666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+footer .copy-right span {
+  color: #626262;
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+}
+footer .copyRight-wrap{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+footer .ftr-bnr{
+  background-color: #FF6C6C;
+  padding: 50px 40px 0;
+
+}
+footer  .ftr-bnr img{
+width: 100%;
+height: auto;
 }
 /*====Footer====*/
