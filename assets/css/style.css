@@ -1395,18 +1395,18 @@ footer .ftr-bnr img {
   width: 167px;
   height: 168px;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   animation: expThree 2s linear 1s forwards;
 }
 @keyframes expThree {
   0% {
     top: 50%;
-    left: 50%;
+    right: 50%;
   }
   100% {
     top: 0%;
-    left: 72%;
+    right: 15%;
     transform: none;
   }
 }
@@ -1448,7 +1448,7 @@ footer .ftr-bnr img {
   }
   100% {
     bottom: 0%;
-    right: 0%;
+    right: 6%;
 
     transform: none;
   }
@@ -1469,9 +1469,8 @@ footer .ftr-bnr img {
     right: 50%;
   }
   100% {
-    bottom: 12%;
-    right: 30%;
-
+    bottom: 7%;
+    right: 30%;         
     transform: none;
   }
 }

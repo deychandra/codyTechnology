@@ -351,6 +351,17 @@
   width: 103px;
   height: 108px;
 }
+@keyframes expThree {
+  0% {
+    top: 50%;
+    right: 50%;
+  }
+  100% {
+    top: 0%;
+    right: 8%;
+    transform: none;
+  }
+}
 }
 
 @media only screen and (max-width: 576px) {
@@ -526,26 +537,162 @@
   footer .slide-btn.white-btn{
     min-width: auto;
   }
-  @keyframes expOne {
-    0% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 0%;
-      left: 0%;
-      transform: none;
-    }
+
+
+  .our-experts .exp-one {
+    width: 81px;
+    height: 83px;
+}
+
+.our-experts .exp-two {
+  width: 74px;
+  height: 76px;
+}
+
+.our-experts .exp-three {
+  width: 81px;
+  height: 83px;
+}
+
+.our-experts .exp-four {
+  width: 83px;
+  height: 97px;
+}
+.our-experts .exp-five {
+  width: 88px;
+  height: 93px;
+}
+
+.our-experts .exp-six {
+  width: 66px;
+  height: 78px;
+}
+
+.our-experts .exp-seven {
+  width: 68px;
+  height: 82px;
+}
+
+.our-experts .exp-eight {
+  width: 83px;
+  height: 88px;
+}
+
+.our-experts .exp-nine {
+  width: 55px;
+  height: 63px;
+}
+
+
+@keyframes expOne {
+  0% {
+    top: 50%;
+    left: 50%;
   }
-  @keyframes expTwo {
-    0% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 0%;
-      left: 37%;
-      transform: none;
-    }
+  100% {
+    top: 0%;
+    left: 0%;
+    transform: none;
   }
+}
+
+
+@keyframes expThree {
+  0% {
+    top: 50%;
+    right: 50%;
+  }
+  100% {
+    top: 0%;
+    right: 0%;
+    transform: none;
+  }
+}
+@keyframes expTwo {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 7%;
+    left: 37%;
+    transform: none;
+  }
+}
+
+@keyframes expFour {
+  0% {
+    top: 50%;
+    right: 50%;
+  }
+  100% {
+    top: 19%;
+    right: 2%;
+    transform: none;
+  }
+}
+
+@keyframes expNine {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    top: 21%;
+    left: 11%;
+    transform: none;
+  }
+}
+
+@keyframes expEight {
+  0% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 0%;
+    transform: none;
+  }
+}
+
+@keyframes expSeven {
+  0% {
+    bottom: 50%;
+    right: 50%;
+  }
+  100% {
+    bottom: 21%;
+    right: 50%;
+    transform: none;
+  }
+}
+
+@keyframes expSix {
+  0% {
+    bottom: 50%;
+    right: 50%;
+  }
+  100% {
+    bottom: 21%;
+    right: 21%;
+    transform: none;
+  }
+}
+
+@keyframes expFive {
+  0% {
+    bottom: 50%;
+    right: 50%;
+  }
+  100% {
+    bottom: 0%;
+    right: 0%;
+    transform: none;
+  }
+}
+.our-experts .ani-container {
+  height: 470px;
+}
+
 }
