@@ -165,3 +165,34 @@ window.addEventListener('load', () => {
     section.classList.add('start-animation');
   }
 });
+
+
+
+
+// Contact-us-scroll
+// Function to check if an element is partially in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top < window.innerHeight && rect.bottom > 0
+  );
+}
+
+// Function to handle the scroll event
+function handleScroll() {
+  const contactSection = document.querySelector('.contact-us');
+
+  if (isInViewport(contactSection)) {
+      contactSection.classList.add('contact-us-show');
+  } else {
+      contactSection.classList.remove('contact-us-show');
+  }
+}
+
+// Attach scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+// Trigger the function initially in case the section is already in view on page load
+handleScroll();
+
+

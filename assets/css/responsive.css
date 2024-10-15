@@ -126,6 +126,9 @@
     transform: none;
   }
 }
+.contact-us .contact-float{
+  display: none;
+}
 }
 
 @media only screen and (max-width: 992px) {
@@ -480,8 +483,11 @@
     margin-top: 20px;
   }
   .contact-us textarea.form-control {
-    border-radius: 20px;
+    border-radius: 10px;
     height: 150px;
+  }
+  .contact-us .form-control{
+    border-radius: 10px;
   }
   .contact-us .submit-btn .submit::before {
     height: 70px;
