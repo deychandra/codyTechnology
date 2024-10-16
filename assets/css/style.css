@@ -1123,7 +1123,7 @@ header li a:hover {
 }
 .contact-us.contact-us-show .contact-float {
   top: 0%;
-  animation: slideIn 1s ease forwards; 
+  animation: slideIn 1.8s ease forwards; 
 }
 @keyframes slideIn {
   from {
@@ -1292,6 +1292,13 @@ footer .social ul a {
   color: #5b5b5b;
   font-size: 14px;
   font-weight: 300;
+  
+}
+footer .social ul a path{
+  transition: all 0.5s linear;
+}
+footer .social ul a:hover path{
+    fill: #ff6868;
 }
 footer .social ul svg {
   margin-right: 10px;
