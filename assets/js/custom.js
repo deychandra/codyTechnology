@@ -35,7 +35,6 @@ $(document).ready(function () {
   var progressWeServe = 0;
   var progressIntervalWeServe;
   function progressBarWeServe(event) {
-    // Clear any previous interval to avoid multiple progress bars
     clearInterval(progressIntervalWeServe);
 
     var autoplayTimeout = owlWeServe.data('owl.carousel').options.autoplayTimeout;
@@ -81,7 +80,6 @@ $(document).ready(function () {
   var progressCaseStudies = 0;
   var progressIntervalCaseStudies;
   function progressBarCaseStudies(event) {
-    // Clear previous progress interval
     clearInterval(progressIntervalCaseStudies);
 
     var autoplayTimeout = owlCaseStudies.data('owl.carousel').options.autoplayTimeout;
@@ -134,21 +132,14 @@ $(document).ready(function () {
 
 
 
-// // Select the element
-// const aniContainer = document.querySelector('.ani-container');
 
-// // Set the height to 80% of the viewport height
-// aniContainer.style.height = '80vh';
-
-
-// Define the section element
 const section = document.querySelector('.our-experts');
 
-// Create a new IntersectionObserver instance
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting && !section.classList.contains('start-animation')) {
-      // Add the class when the section is first in view
+     
       section.classList.add('start-animation');
     }
   });
@@ -156,8 +147,6 @@ const observer = new IntersectionObserver((entries) => {
 
 // Start observing the section
 observer.observe(section);
-
-// Check if the section is in view when the page loads
 window.addEventListener('load', () => {
   const rect = section.getBoundingClientRect();
   const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
@@ -170,15 +159,12 @@ window.addEventListener('load', () => {
 
 
 // Contact-us-scroll
-// Function to check if an element is partially in the viewport
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
       rect.top < window.innerHeight && rect.bottom > 0
   );
 }
-
-// Function to handle the scroll event
 function handleScroll() {
   const contactSection = document.querySelector('.contact-us');
 
@@ -189,23 +175,16 @@ function handleScroll() {
   }
 }
 
-// Attach scroll event listener
-window.addEventListener('scroll', handleScroll);
 
-// Trigger the function initially in case the section is already in view on page load
+window.addEventListener('scroll', handleScroll);
 handleScroll();
 
 
 
 
 // Sticky-header
-
-// Get the header element
 const header = document.querySelector('header');
-
-// Add an event listener to the window's scroll event
 window.addEventListener('scroll', () => {
-  // Check if the user has scrolled down far enough to add the sticky class
   if (window.scrollY > 10) {
     header.classList.add('sticky');
   } else {
@@ -217,12 +196,9 @@ window.addEventListener('scroll', () => {
 
 // Scroll-to-top
 
-// Get the scroll-to-top button element
 const scrollToTopButton = document.querySelector('.scroll-to-top');
 
-// Add an event listener to the button's click event
 scrollToTopButton.addEventListener('click', () => {
-  // Use the window.scrollTo method to scroll to the top of the page
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
