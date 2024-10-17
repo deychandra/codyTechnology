@@ -147,6 +147,23 @@ header {
   z-index: 99;
 }
 
+
+
+header.sticky{
+  background-color: var(--white);
+  padding: 10px 0;
+  animation: headerAnimate 0.5s linear 0s 1 forwards ;
+}
+
+@keyframes headerAnimate{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
 header .logo {
   max-width: 100px;
   width: 100%;
@@ -1731,4 +1748,20 @@ footer .ftr-bnr img {
 .our-experts .brdr img {
   width: 100%;
   height: 100%;
+}
+
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border: none;
+  outline: 0;
+  background: #ff6c6c;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }

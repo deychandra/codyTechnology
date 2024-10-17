@@ -200,3 +200,31 @@ handleScroll();
 
 // Sticky-header
 
+// Get the header element
+const header = document.querySelector('header');
+
+// Add an event listener to the window's scroll event
+window.addEventListener('scroll', () => {
+  // Check if the user has scrolled down far enough to add the sticky class
+  if (window.scrollY > 10) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+});
+
+
+
+// Scroll-to-top
+
+// Get the scroll-to-top button element
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+// Add an event listener to the button's click event
+scrollToTopButton.addEventListener('click', () => {
+  // Use the window.scrollTo method to scroll to the top of the page
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
