@@ -767,4 +767,13 @@
   .scroll-to-top svg {
     width: 18px;
   }
+  .case-studies .slider-carousel img,
+  .why-choose-us .apd img, .why-choose-us .p-dne img,
+   .why-choose-us .p-dne img{
+    object-fit: cover;
+  }
+  .banner .cloud-rocket{
+    width: 95%;
+    transform: translate(-50%, 41%);
+  }
 }
